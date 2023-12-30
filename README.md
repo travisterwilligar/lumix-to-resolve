@@ -22,10 +22,9 @@ The following meta data is supported:
 * Download the zip file containing the script `getmetadata` and extract the zip files
 * Open terminal on your Mac
 * change to the directory the contains the extracted file
-* Copy the script to /usr/local/bin using the following command in terminal
+* Copy the script to /usr/local/bin using the following commands in terminal (enter your password when prompted)
     * `sudo cp getmetadata /usr/local/bin`
-    * sudo chmod +x getmetadata.py
-    * enter your password (you will need administrator permissions)
+    * `sudo chmod +x getmetadata.py`
 * Optional - install xmltodict which unlocks ALL meta data avilable (recommended to get the full use out of this tool)
     * enter the following command `pip3 install xmltodict`
 ### Windows Installation (coming soon)
