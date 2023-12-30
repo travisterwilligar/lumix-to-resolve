@@ -40,8 +40,8 @@ class Metadata:
             self.row = row
             if(xmltodictFound != False):
                 self.row = self.xml_to_json()
-                self.rawMetaData.append(self.row)
-                print('\033[92m' + u'\u2713' + self.row['FileName'] + '\033[0m')
+            self.rawMetaData.append(self.row)
+            print('\033[92m' + u'\u2713' + self.row['FileName'] + '\033[0m')
 
     def map_to_resolve(self):
         for row in self.rawMetaData:
