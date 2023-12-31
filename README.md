@@ -1,4 +1,4 @@
-# lumix-to-resolve
+# Lumix Resolve Metadata Importer
 Lumix to Davinci Resolve Meta Data import tool allows you to import basic meta data from your lumix video files into Davinci Resolve so that you can see these meta data as you're editing. This is a command line tool, so some mac terminal or windows command line expeirence will be necessary to use this tool.
 
 This tool is a basic wrapper for the wonderful exiftool, which is required to use this.
