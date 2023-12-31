@@ -94,7 +94,7 @@ class Metadata:
         subprocess.Popen("rm  " + self.inputFileName, shell=True, stdout=subprocess.PIPE).stdout.read()
 
 def main():
-    metadata = Metadata('input-exif2.json', 'resolve-metadata.csv')
+    metadata = Metadata('input-exif.json', 'resolve-metadata.csv')
     metadata.get_exif()
     metadata.load_exif()
     metadata.process_exif()
