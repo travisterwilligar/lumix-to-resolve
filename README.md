@@ -22,7 +22,7 @@ The following meta data is supported:
     * when in doubt you can download a fresh copy from https://www.python.org/downloads/macos/
 * Download the zip file containing the script **lumix-to-resolve-main.zip** and extract the zip files
 * Open terminal on your Mac
-* change to the directory the contains the extracted file
+* Change to the directory the contains the unzipped files
 * Copy the script to /usr/local/bin using the following commands in terminal (enter your password when prompted)
     * `sudo cp getmetadata /usr/local/bin`
     * `sudo chmod +x /usr/local/bin/getmetadata`
