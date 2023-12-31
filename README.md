@@ -33,18 +33,18 @@ The following meta data is supported:
 * In your terminal, change to the directory that contains either MOV or MP4 files downloaded directly from a Lumix camera 
 * Run the following command `getmetadata`
 * If the command ran successfully, you will see a list of video files that were found with metadata
-* In the directory where you ran the command, look for a file called *resolve-metadata.csv*
+* In the directory where you ran the command, look for a file called **resolve-metadata.csv**
 * In resolve, either create a new project or open a new project.
 * Once inside the project go to the media pool (cut or edit tab)
 * Go to the file menu
-    * Select *Import Metadata To*
-    * select *Media Pool*
-* Select the *resolve-metadata.csv* file in the directory where you ran the command
+    * Select **Import Metadata To**
+    * select **Media Pool**
+* Select the **resolve-metadata.csv** file in the directory where you ran the command
 * In the metadata import dialog
     * Note, if clips you'd like to add the metadata to are inside a bin, you must perform the inmport once inside the bin
-    * Deselect the *Match using clip start and end time code*
-    * In merge options, choose the *Update all metadata fields in the source file option*
+    * Deselect the **Match using clip start and end time code**
+    * In merge options, choose the **Update all metadata fields in the source file option**
     * You should see a confirmation that the metadata was imported
-* Head to the edit tab and click the meta data tab and either select *All* or *Camera*
+* Head to the edit tab and click the meta data tab and either select **All** or **Camera**
 * Select a click from the media pool and you should now see the metadata
 
