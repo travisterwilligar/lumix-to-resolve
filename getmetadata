@@ -72,8 +72,8 @@ class Metadata:
                     self.metadata_extended = {
                         'Sample Rate (Khz)':        row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Audio']['SamplingRate'], 
                         'Bit Rate':                 row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Audio']['BitsPerSample'], 
-                        'Gamma Notes':              row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamma']['CaptureGamma'], 
-                        'Color Space Notes':        row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamut']['CaptureGamut'], 
+                        'Color Space Notes':        row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamma']['CaptureGamma'], 
+                        'Gamma Notes':              row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamut']['CaptureGamut'], 
                         'Codec Bitrate':            row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Video']['Codec']['@BitRate'],
                         'Camera Manufacturer':      row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['ClipMetadata']['Device']['Manufacturer'],
                     }
