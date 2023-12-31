@@ -20,7 +20,7 @@ The following meta data is supported:
     * I strongly recommend installing the windows executable or the MacOS package
 * Python 3 is required. Most macs contain this
     * when in doubt you can download a fresh copy from https://www.python.org/downloads/macos/
-* Download the zip file containing the script `getmetadata` and extract the zip files
+* Download the zip file containing the script **lumix-to-resolve-main.zip** and extract the zip files
 * Open terminal on your Mac
 * change to the directory the contains the extracted file
 * Copy the script to /usr/local/bin using the following commands in terminal (enter your password when prompted)
