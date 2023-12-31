@@ -18,7 +18,8 @@ The following meta data is supported:
 * Install exiftool 
     * https://exiftool.org/
     * I strongly recommend installing the windows executable or the MacOS package
-* python 3 is required. Most macs contain this, but when in doubt you can download a fresh copy from https://www.python.org/downloads/macos/
+* Python 3 is required. Most macs contain this
+    * when in doubt you can download a fresh copy from https://www.python.org/downloads/macos/
 * Download the zip file containing the script `getmetadata` and extract the zip files
 * Open terminal on your Mac
 * change to the directory the contains the extracted file
