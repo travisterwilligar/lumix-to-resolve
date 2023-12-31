@@ -27,7 +27,7 @@ The following meta data is supported:
     * `sudo cp getmetadata /usr/local/bin`
     * `sudo chmod +x /usr/local/bin/getmetadata`
 * Optional - install xmltodict which unlocks ALL meta data avilable (recommended to get the full use out of this tool)
-    * enter the following command `pip3 install xmltodict`
+    * enter the following command `sudo pip3 install xmltodict`
 ### Windows Installation (coming soon)
 
 ## Usage
