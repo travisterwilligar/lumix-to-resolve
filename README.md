@@ -7,12 +7,19 @@ The following meta data is supported:
 * ISO (including whether or not DR boost is on for GH6 and G9II)
 * Shutter speed 
 * White point (White balance)
-* Frame rate
 * Lens
+* Aperture
 * Lens focal distance
+* Frame rate
 * Gamma
 * Color space
+* Video bit rate
+* Audio sample rate
+* Audio bit rate
 * Camera model
+* Camera serial
+* Camera firmware
+* Camera manufacturer
 
 ### Mac OS Installation
 * Install exiftool 
