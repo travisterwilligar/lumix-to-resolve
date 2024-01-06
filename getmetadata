@@ -55,27 +55,27 @@ class Metadata:
 
                 #Resolve Mapping
                 self.metadata = {
-                    'File Name':                row['FileName'],
-                    'ISO':                      row['ISO'],
-                    'Shutter Speed':            row['ShutterSpeed'],
-                    'White Point (Kelvin)':     row['ColorTempKelvin'],
-                    'Shot Frame Rate':          row['VideoFrameRate'],
-                    'Camera Type':              row['Model'], 
-                    'Lens Type':                row['LensType'],             
+                    'File Name':                row.get('FileName'),
+                    'ISO':                      row.get('ISO'),
+                    'Shutter Speed':            row.get('ShutterSpeed'),
+                    'White Point (Kelvin)':     row.get('ColorTempKelvin'),
+                    'Shot Frame Rate':          row.get('VideoFrameRate'),
+                    'Camera Type':              row.get('Model'),
+                    'Camera Manufacturer':      row.get('Make'), 
+                    'Lens Type':                row.get('LensType'),             
                     'Camera Aperture':          row.get('Aperture'),
-                    'Focal Point (mm)':         row['FocalLength'],
-                    'Camera FPS':               row['VideoFrameRate'],
-                    'Camera Serial #':          row['SerialNumber'],
-                    'Camera Firmware':          row['FirmwareVersion'],
+                    'Focal Point (mm)':         row.get('FocalLength'),
+                    'Camera FPS':               row.get('VideoFrameRate'),
+                    'Camera Serial #':          row.get('SerialNumber'),
+                    'Camera Firmware':          row.get('FirmwareVersion'),
                 }
                 if(xmltodictFound != False):
                     self.metadata_extended = {
-                        'Sample Rate (Khz)':        row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Audio']['SamplingRate'], 
-                        'Bit Rate':                 row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Audio']['BitsPerSample'], 
-                        'Color Space Notes':        row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamma']['CaptureGamma'], 
-                        'Gamma Notes':              row['PanasonicSemi-ProMetadataXml']['ClipMain']['UserArea']['AcquisitionMetadata']['CameraUnitMetadata']['Gamut']['CaptureGamut'], 
-                        'Codec Bitrate':            row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['EssenceList']['Video']['Codec']['@BitRate'],
-                        'Camera Manufacturer':      row['PanasonicSemi-ProMetadataXml']['ClipMain']['ClipContent']['ClipMetadata']['Device']['Manufacturer'],
+                        'Color Space Notes':    row.get('PanasonicSemi-ProMetadataXml').get('ClipMain').get('UserArea').get('AcquisitionMetadata').get('CameraUnitMetadata').get('Gamma').get('CaptureGamma'), 
+                        'Gamma Notes':          row.get('PanasonicSemi-ProMetadataXml').get('ClipMain').get('UserArea').get('AcquisitionMetadata').get('CameraUnitMetadata').get('Gamut').get('CaptureGamut'), 
+                        'Codec Rate':           row.get('PanasonicSemi-ProMetadataXml').get('ClipMain').get('ClipContent').get('EssenceList').get('Video').get('Codec').get('@BitRate'), 
+                        'Sample Rate (Khz)':    row.get('PanasonicSemi-ProMetadataXml').get('ClipMain').get('ClipContent').get('EssenceList').get('Audio').get('SamplingRate'),
+                        'Bit Rate':             row.get('PanasonicSemi-ProMetadataXml').get('ClipMain').get('ClipContent').get('EssenceList').get('Audio').get('BitsPerSample'),
                     }
                     self.metadata.update(self.metadata_extended)
                 self.processedMetaData.append(self.metadata)
