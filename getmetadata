@@ -83,12 +83,15 @@ class Metadata:
                 continue
 
     def write_csv(self):
-        with open(self.outputFileName,'w') as f:
-            w = csv.writer(f)
-            w.writerow(self.processedMetaData[0].keys())
-            for row in self.processedMetaData:
-                w.writerow(row.values())
-            print('Import metadata to resolve using ' + self.outputFileName)
+        if( len(self.processedMetaData) > 0):
+            with open(self.outputFileName,'w') as f:
+                w = csv.writer(f)
+                w.writerow(self.processedMetaData[0].keys())
+                for row in self.processedMetaData:
+                    w.writerow(row.values())
+                print('Import metadata to resolve using ' + self.outputFileName)
+        else:
+            print('\N{cross mark}' + '\033[91m' + ' No lumix video files were scanned in this directory')
 
     def clean_up(self):
         subprocess.Popen("rm  " + self.inputFileName, shell=True, stdout=subprocess.PIPE).stdout.read()
